@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Comprobar Palíndromos</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles/main.css">
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+</style>
+
+</head>
+<body>
+
+<div class="contenedor">
+<header>
+			<div class="bloque">
+				<div class="row" id="caja-header">
+					<div class="col-4">
+					<img src="images/logo.png" alt="" id="logo">
+					</div>
+					<div class="col-8" id="caja-nav">
+						<div class="container-fluid">
+							<nav class="navbar">
+							<a href="https://es.wikipedia.org/wiki/Pal%C3%ADndromo" class="menu-item" target="_blank">¿Qué son los Palíndromos?</a>
+							<a href="https://www.ejemplode.com/53-conocimientos_basicos/2555-ejemplo_de_palindromos.html" class="menu-item" target="_blank">Ejemplos de Palíndromos</a>
+							<a href="https://www.yuqo.es/palindromo-135/" class="menu-item" target="_blank">Informacion Extra</a>
+						</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+</header>
+<main>
+	<div class="container">
+		<h1>Aprende Sobre los Palíndromos</h1>
+		<p>Los palíndromos son muy interesantes y divertidos. Aqui puedes comprobar si una palabra es o no un Palíndromo</p>
+
+		<div class="caja-imagen">
+			<img src="images/palindromo-sator.png" class="img-fluid" alt="" id="sator">
+		</div>
+		<div class="caja-form" id="caja-form">
+			<div class="form-group">
+				<label for="">Ingresa una Palabra para Comprobar</label>
+			<input type="text" class="form-control" id="caja-texto" value="">
+			</div>
+			<div class="form-group">
+				<div class="d-grid gap-2">
+ 					<button type="button" class="btn btn-success" onclick="ComprobarPalindromo()">Comprobar</button>
+				</div>
+			</div>		
+		</div>
+		<div class="caja-imagen" id="caja-loading">
+			<img src="images/loading.gif" class="img-fluid" alt="" id="loading">
+		</div>
+		<div id="caja-mensaje">
+			<h2 id="palindromo"></h2>
+			<br>
+			<h3 id="mensaje"></h3>
+			<br>
+			<div class="form-group" id="caja-boton">
+				<div class="d-grid gap-2">
+ 					<button type="button" class="btn btn-success" onclick="Reiniciar()">Volver a Comprobar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+
+<footer>
+	<div class="bloque">
+		<div class="row" id="caja-footer">
+			<div class="row">
+				<div id="caja-logo-footer">
+					<img src="images/logo.png" alt="" id="logo-footer">
+					</div>
+			</div>
+			<div class="row">
+				<div class="" id="caja-nav-footer">
+						<div class="container-fluid">
+							<nav class="navbar">
+							<a href="https://es.wikipedia.org/wiki/Pal%C3%ADndromo" class="menu-item-footer" target="_blank">¿Qué son los Palíndromos?</a>
+							<a href="https://www.ejemplode.com/53-conocimientos_basicos/2555-ejemplo_de_palindromos.html" class="menu-item-footer" target="_blank">Ejemplos de Palíndromos</a>
+							<a href="https://www.yuqo.es/palindromo-135/" class="menu-item-footer" target="_blank">Informacion Extra</a>
+						</nav>
+						</div>
+					</div>
+			</div>
+
+		</div>
+	</div>
+	
+</footer>
+
+
+</div>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
