@@ -5,6 +5,8 @@
 }
 #logo{
 	width: 60%;
+	display: block;
+	margin: 0 auto;
 }
 .bloque{
 	padding: 30px;
@@ -88,4 +90,28 @@ input{
 }
 #caja-loading, #caja-mensaje{
 	display: none;
+}
+@media screen and (max-width: 640px){
+	#caja-header, #caja-footer, #caja-logo-footer, #caja-nav-footer{
+	width: 100%;
+	}
+	#logo, #logo-footer{
+		width: 70%;
+		display: block;
+		margin: 0 auto;
+	}
+	#sator{
+		max-width: 60%;
+	}
+	.menu-item{
+		font-size: 12px;
+	}
+	.caja-form, #caja-boton{
+		width: 90%;
+		margin: 0 auto;
+	}
+	label{
+		display: block;
+		margin: 0 auto;
+	}
 }
