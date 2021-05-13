@@ -11,6 +11,7 @@ function ComprobarPalindromo(texto){
 			ultimaLetra --;
 		}else{
 			verificar = false;
+			i++;
 		}
 		
 	}

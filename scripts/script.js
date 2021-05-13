@@ -42,10 +42,10 @@ function ComprobarPalindromo(){
 			ultimaLetra --;
 		}else{
 			verificar = false;
+			i++;
 		}
 		
 	}
-
 	if (verificar == true) {
 		texto = textoLimpio.toUpperCase();
 		palabra.innerHTML = texto;
